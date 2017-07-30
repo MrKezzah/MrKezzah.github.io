@@ -111,7 +111,7 @@ html{
 }
 
 #ex1 img{
-    /*z-index: -1;*/
+    z-index: -1;
 }
 
 .examples p{
@@ -127,7 +127,7 @@ html{
   border-radius: 3px 3px 20px 20px;
   border-color: #00FFFF;
   box-shadow: 0px 0px 50px #008282, inset 0px 0px 25px #008282;
-  background-color: black;
+  background-color: transparent;
   float: left;
   margin-right: 45px;
   animation-play-state: running;
