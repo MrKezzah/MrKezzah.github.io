@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Lazer84";
+  src: url('fonts/Lazer84.ttf') format('truetype');
+}
+@font-face {
+  font-family: "alienEncounters";
+  src: url('fonts/Alien-Encounters-Solid-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "devilBreeze";
+  src: url('fonts/DevilBreezeBold.ttf') format('truetype');
+}
+
+/* TODO: Remove all commented code and repeated code. Make a good BG image*/
+
+html{
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+  user-select: none;
+  /*background-image: url("images/nightSky.png");*/
+  background-size: 100%;
+}
+
+#header{
+  /*width: 800px;*/
+  letter-spacing: 10px;
+}
+
+.name{
+  width: 800px;
+  cursor: default;
+  font-size: 120px;
+  position: absolute;
+  margin: 0;
+  padding: 0px 30px 0px 30px;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 25%;
+  font-family: "Lazer84";
+  /*color: #FF6AD5;*/
+  /*Orange to Purple Gradient*/
+  /*background:  url("images/skyline.png") 0px 275px, linear-gradient(to top, #f9dd7f 0%,#db6b08 38%,#8f44af 63%,#bf67a3 100%);*/
+  /*purple sunset*/
+  /*background: url("images/skyline.png") 0px 275px, linear-gradient(to bottom, #6257aa 0%,#8d7ed3 16%,#c986c2 33%,#e3b19f 55%,#fbb679 69%,#f0996e 81%,#c2344e 100%);*/
+  /*Aqua to purple*/
+  /*background-image:  url("images/skyline.png") 0px 275px, linear-gradient(to bottom, #00afef 0%,#3d3ba0 30%,#593289 70%,#a347e0 100%);*/
+  background: url("images/skyline2.png") 0px 275px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(138, 138, 138, 0.2);
+  z-index: 1;
+  animation: skylineAnim 30s linear infinite;
+  background-size: 640px 150px;
+  /*animation-play-state: paused;*/
+}
+
+.name2{
+  width: 800px;
+  cursor: default;
+  font-size: 120px;
+  position: absolute;
+  margin: 0;
+  padding: 2px 30px 1px 32px;;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 25%;
+  font-family: "Lazer84";
+  color: white;
+  position: absolute;
+  text-shadow: 2px 2px black, 0px 0px 25px #9e56e0;
+  z-index: -12;
+}
+
+.name:hover{
+  /*animation-play-state: running;*/
+}
+
+@keyframes skylineAnim{
+    0% {background: url("images/skyline2.png") 0 320px; -webkit-background-clip: text; -webkit-text-fill-color: rgba(138, 138, 138, 0.2); background-size: 640px 150px;}
+    100% {background:  url("images/skyline2.png") 640px 320px; -webkit-background-clip: text; -webkit-text-fill-color: rgba(138, 138, 138, 0.2); background-size: 640px 150px;}
+}
+
+#projects{
+  margin: 0 ;
+  padding: 0;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: auto;
+}
+
+.examples{
+  margin-top: 0px;
+  padding-bottom: 35px;
+  display: block;
+  width: 250px;
+  height: 166px;
+  border: 3px solid red;
+  border-radius: 5px;
+  background-color: gray;
+}
+
+.examples img{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  height: auto;
+  padding-top: 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#ex1 img{
+    /*z-index: -1;*/
+}
+
+.examples p{
+  padding-top: 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#ex1{
+  color: #FF00B2;
+  text-shadow: 0px 0px 20px #A40073;
+  font-family: "alienEncounters";
+  border-radius: 3px 3px 20px 20px;
+  border-color: #00FFFF;
+  box-shadow: 0px 0px 50px #008282, inset 0px 0px 25px #008282;
+  background-color: black;
+  float: left;
+  margin-right: 45px;
+  animation-play-state: running;
+  animation: ex1AnimRev 1s forwards;
+}
+
+#ex1:hover{
+  animation: ex1Anim 1s forwards;
+  animation-play-state: running;
+}
+
+@keyframes ex1Anim {
+  0% { width: 250px; height: 166px; color: #FF00B2; text-shadow: 0px 0px 20px #A40073; margin-right: 45px; box-shadow: 0px 0px 50px #008282, inset 0px 0px 25px #008282; border-color: #00FFFF; }
+  100% { width: 270px; height: 180px; color: #00FFFF; text-shadow: 0px 0px 35px #008282; margin-right: 25px; box-shadow: 0px 0px 70px #A40073, inset 0px 0px 35px #A40073; border-color: #FF00B2; }
+}
+
+@keyframes ex1AnimRev {
+  00% { width: 270px; height: 180px; color: #00FFFF; text-shadow: 0px 0px 35px #008282; margin-right: 25px; box-shadow: 0px 0px 70px #A40073, inset 0px 0px 35px #A40073; border-color: #FF00B2; }
+  100% { width: 250px; height: 166px; color: #FF00B2; text-shadow: 0px 0px 20px #A40073; margin-right: 45px; box-shadow: 0px 0px 50px #008282, inset 0px 0px 25px #008282; border-color: #00FFFF; }
+}
+
+#ex2{
+  font-weight: 600;
+  color: #757575;
+  background-color: #D3A447;
+  border: none;
+  border-radius: 0;
+  float: right;
+  margin-left: 45px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45), 8px 8px #39528D, -2px -2px 4px rgba(0, 0, 0, 0.45), -8px -8px #C94456, inset 0px 0px 15px #8F640D;
+  animation-play-state: running;
+  animation: ex2AnimRev 1s forwards;
+}
+
+#ex2:hover{
+  animation: ex2Anim 1s forwards;
+  animation-play-state: running;
+}
+
+@keyframes ex2Anim {
+  0% { width: 250px; height: 166px; color: #757575; margin-left: 45px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45), 8px 8px #39528D, -2px -2px 4px rgba(0, 0, 0, 0.45), -8px -8px #C94456, inset 0px 0px 15px #8F640D; }
+  100%{ width: 270px; height: 180px; color: white; margin-left: 25px; box-shadow: -3px -3px 4px rgba(0, 0, 0, 0.45)	, -10px -10px #39528D, 3px 3px 4px rgba(0, 0, 0, 0.45), 10px 10px #C94456, inset 0px 0px 15px #8F640D;}
+}
+
+@keyframes ex2AnimRev{
+  0%{ width: 270px; height: 180px; color: white; margin-left: 25px; box-shadow: -3px -3px 4px rgba(0, 0, 0, 0.45), -10px -10px #39528D, 3px 3px 4px rgba(0, 0, 0, 0.45), 10px 10px #C94456, inset 0px 0px 15px #8F640D;}
+  100% { width: 250px; height: 166px; color: #757575; margin-left: 45px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45), 8px 8px #39528D, -2px -2px 4px rgba(0, 0, 0, 0.45), -8px -8px #C94456, inset 0px 0px 15px #8F640D; }
+}
